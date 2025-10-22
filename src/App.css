@@ -1,0 +1,120 @@
+/* Editor.js styles */
+.codex-editor__redactor {
+  padding-bottom: 150px !important;
+}
+
+.ce-block__content {
+  max-width: 100%;
+}
+
+.ce-toolbar__content {
+  max-width: 100%;
+}
+
+/* Hide empty blocks that might be auto-created */
+.ce-block:empty,
+.ce-block[data-empty="true"] {
+  display: none;
+}
+
+/* Ensure placeholder is visible when editor is empty */
+.codex-editor--empty .ce-block__content {
+  opacity: 0.5;
+}
+
+/* Prose styles for editor content */
+.prose {
+  color: hsl(var(--foreground));
+}
+
+.prose h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.prose h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.prose p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  line-height: 1.75;
+}
+
+.prose ul {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+
+.prose ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* Drag and drop styles */
+.drag-over {
+  background-color: rgba(59, 130, 246, 0.1);
+  border: 2px dashed #3b82f6;
+}
+
+
+
+/* Chat sidebar styles */
+.chat-sidebar {
+  background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+}
+
+/* Editor toolbar styles */
+.editor-toolbar {
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+}
+
+.editor-toolbar button:hover {
+  background-color: #e2e8f0;
+}
+
+/* Word count indicator */
+.word-count {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Selected text highlight */
+::selection {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
