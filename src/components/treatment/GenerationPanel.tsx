@@ -1,13 +1,9 @@
-import React from 'react';
 import { useTreatmentStore } from '../../store/treatmentStore';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import { Label } from '../ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Textarea } from '../ui/textarea';
-import { Input } from '../ui/input';
 import { Switch } from '../ui/switch';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { Slider } from '../ui/slider';
 import type { ToneType, GenreType } from '../../types/treatment';
 
 const TONES: ToneType[] = ['DIRECT', 'CONVERSATIONAL', 'FUNNY', 'POETIC'];

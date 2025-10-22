@@ -300,7 +300,7 @@ function parseReferences(text: string): any[] {
 }
 
 function parseScriptIdeas(text: string): any[] {
-  const ideas = [];
+  const ideas: any[] = [];
   const sections = text.split(/\n\n+/);
   
   sections.forEach((section, index) => {

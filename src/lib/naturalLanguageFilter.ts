@@ -62,7 +62,7 @@ export function naturalizeText(text: string): string {
   
   // Clean up sentences that start with punctuation after phrase removal
   processed = processed.replace(/\.\s*,/g, '.');
-  processed = processed.replace(/([.!?])\s*([a-z])/g, (match, punct, letter) => {
+  processed = processed.replace(/([.!?])\s*([a-z])/g, (_match, punct, letter) => {
     return `${punct} ${letter.toUpperCase()}`;
   });
 

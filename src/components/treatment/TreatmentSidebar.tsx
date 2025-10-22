@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTreatmentStore } from '../../store/treatmentStore';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
